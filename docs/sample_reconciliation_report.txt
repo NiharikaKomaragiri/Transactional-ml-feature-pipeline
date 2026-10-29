@@ -1,0 +1,38 @@
+================================================================================
+           TRANSACTIONAL ML FEATURE PIPELINE - RECONCILIATION REPORT
+================================================================================
+Execution Metadata:
+  - Run ID                    : RUN_20261029_100143_0f4a28
+  - Status                    : SUCCESS
+  - Execution Started         : 2026-10-29T10:01:43Z
+  - Execution Completed       : 2026-10-29T10:01:45Z
+  - Duration                  : 2.677 seconds
+  - Processing Throughput     : 37355.25 records/second
+
+Customer Reconciliation:
+  - Raw Customer Records      : 2500
+  - Valid Customer Records    : 2500
+  - Quarantined Customers     : 0
+  - Balance Invariant Check   : 2500 == 2500 + 0
+
+Transaction Reconciliation:
+  - Raw Transaction Records   : 100000
+  - Valid Curated Records     : 98000
+  - Quarantined Records       : 2000
+  - Balance Invariant Check   : 100000 == 98000 + 2000
+  - Reconciliation Result     : PASSED (BALANCED)
+
+Quarantine Rejection Traceability Breakdown:
+  - MISSING_REQUIRED_FIELD    :    334 records ( 0.33%)
+  - INVALID_AMOUNT            :    334 records ( 0.33%)
+  - INVALID_ENUM_VALUE        :    333 records ( 0.33%)
+  - ORPHAN_FOREIGN_KEY        :    333 records ( 0.33%)
+  - DUPLICATE_PRIMARY_KEY     :    333 records ( 0.33%)
+  - NEGATIVE_TIMESTAMP_LAG    :    333 records ( 0.33%)
+
+Feature & Target Engineering Output:
+  - ML Feature Records        : 2500
+  - Observation Target Records: 2500
+  - Target Population Match   : PASSED (2500 == 2500)
+  - Target Leakage Check      : PASSED (Forward target store isolated)
+================================================================================
