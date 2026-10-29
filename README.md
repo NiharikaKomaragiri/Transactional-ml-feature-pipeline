@@ -163,7 +163,7 @@ transactional-ml-feature-pipeline/
 
 ```bash
 # Clone the repository (replace with your repository URL)
-git clone <REPOSITORY_URL_PLACEHOLDER>
+git clone https://github.com/NiharikaKomaragiri/transactional-ml-feature-pipeline.git
 cd transactional-ml-feature-pipeline
 
 # Create virtual environment
